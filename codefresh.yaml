@@ -1,0 +1,15 @@
+version: '1.0'
+steps:
+  BuildingDockerImage:
+    title: Building Docker Image
+    type: build
+    image_name: zeeahmed/hellokubernetes
+    working_directory: ./
+    tag: '${{CF_BRANCH_TAG_NORMALIZED}}'
+    dockerfile: Dockerfile
+
+    push_to_registry:
+      title: Push To Registry
+      type: push
+      candidate: ${{BuildingDockerImage}}
+      tag: ${{CF_BRANCH}}
