@@ -26,6 +26,7 @@ spec:
     spec:
       containers:
       - name: hello-kubernetes
-        image: paulbouwer/hello-kubernetes:1.5
+        image:  r.cfcr.io/zee/zeeahmed/hellokubernetes:master
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
