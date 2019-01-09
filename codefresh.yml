@@ -20,7 +20,7 @@ steps:
     title: deploying to kubernetes
     type: deploy
     kind: kubernetes
-    cluster:  workshop-playground@Personal - Zee Ahmed
+    cluster:  codefresh-spike@Personal - Zee Ahmed
     namespace: workshop-09a
     file_path: ./yaml/hello-kubernetes.yaml
     candidate:
