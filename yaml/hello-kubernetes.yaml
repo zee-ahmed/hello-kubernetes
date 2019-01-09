@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: hello-kubernetes
-        image:  r.cfcr.io/zee/zeeahmed/hellokubernetes:master
+        image: gcr.io/jetstack-zee/zeeahmed/hellokubernetes:master
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
