@@ -28,7 +28,7 @@ spec:
       - name: hello-kubernetes
         image:  r.cfcr.io/zee/zeeahmed/hellokubernetes:master
         imagePullPolicy: Always
-      imagePullSecrets:
-        - name: codefresh-generated-r.cfcr.io-cfcr-workshop-09a
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+        - name: codefresh-generated-r.cfcr.io-cfcr-workshop-09a
