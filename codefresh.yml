@@ -14,7 +14,7 @@ steps:
     candidate: ${{BuildingDockerImage}}
     tag: ${{CF_BRANCH}}
     image_name: zeeahmed/hellokubernetes
-    registry: cfcr
+    registry: gcr
 
   deploy_to_kubernetes:
     title: deploying to kubernetes
@@ -29,4 +29,4 @@ steps:
       image: ${{BuildingDockerImage}}
       # The registry that the user's Kubernetes cluster can pull the image from
       # Codefresh will generate (if not found) secret and add it to the deployment so the Kubernetes master can pull it
-      registry: cfcr
+      registry: gcr
